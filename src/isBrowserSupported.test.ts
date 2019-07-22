@@ -74,3 +74,21 @@ test("return Edge is not supported when disabled", (): void => {
 
   expect(isEdgeSupported).toBeFalsy()
 })
+
+test("return Opera is not supported when disabled", (): void => {
+  const isOperaSupported = isBrowserSupported(
+    { opera: false },
+    { name: "Opera" },
+  )
+
+  expect(isOperaSupported).toBeFalsy()
+})
+
+test("return Safari is not supported when disabled", (): void => {
+  const isSafariSupported = isBrowserSupported(
+    { safari: false },
+    { name: "Safari" },
+  )
+
+  expect(isSafariSupported).toBeFalsy()
+})
