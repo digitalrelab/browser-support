@@ -2,7 +2,7 @@
   "name": "@digitalrelab/react-browser-support",
   "description": "A simple React hook to render contents based on browser support. TypeScript ready.",
   "version": "1.0.0",
-  "main": "src/index.tsx",
+  "main": "src/index.ts",
   "author": "DigitalReLab, LLC.",
   "license": "MIT",
   "scripts": {
