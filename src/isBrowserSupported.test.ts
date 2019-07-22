@@ -68,3 +68,9 @@ test("return IE and Chrome are not supported when both are disabled", (): void =
   expect(isChromeSupported).toBeFalsy()
   expect(isIESupported).toBeFalsy()
 })
+
+test("return Edge is not supported when disabled", (): void => {
+  const isEdgeSupported = isBrowserSupported({ edge: false }, { name: "Edge" })
+
+  expect(isEdgeSupported).toBeFalsy()
+})

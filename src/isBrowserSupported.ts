@@ -40,6 +40,9 @@ function getBrowserKeyByName(name: string): TBrowserKey | null {
     case "Safari":
       return "safari"
 
+    case "Edge":
+      return "edge"
+
     default:
       return null
   }
