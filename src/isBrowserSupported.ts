@@ -34,6 +34,9 @@ function getBrowserKeyByName(name: string): TBrowserKey | null {
     case "Firefox":
       return "firefox"
 
+    case "Opera":
+      return "opera"
+
     case "Safari":
       return "safari"
 

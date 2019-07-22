@@ -1,7 +1,7 @@
 import { getSupportedBrowsers } from "./getSupportedBrowsers"
 import { TBrowserKey } from "./types"
 
-test("return all browsers if no one is disabled", () => {
+test("return all browsers if no one is disabled", (): void => {
   const expectedSupportedBrowsers = getSupportedBrowsers({
     ie: undefined,
     chrome: undefined,
@@ -15,7 +15,7 @@ test("return all browsers if no one is disabled", () => {
   expect(expectedSupportedBrowsers).toEqual(actualSupportedBrowsers)
 })
 
-test("return all but ie if it is disabled", () => {
+test("return all but ie if it is disabled", (): void => {
   const expectedSupportedBrowsers = getSupportedBrowsers({
     ie: false,
     chrome: undefined,
@@ -29,7 +29,7 @@ test("return all but ie if it is disabled", () => {
   expect(expectedSupportedBrowsers).toEqual(actualSupportedBrowsers)
 })
 
-test("return none if all browsers are not supported", () => {
+test("return none if all browsers are not supported", (): void => {
   const expectedSupportedBrowsers = getSupportedBrowsers({
     ie: false,
     chrome: false,

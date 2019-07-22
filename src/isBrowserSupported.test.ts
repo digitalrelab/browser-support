@@ -1,6 +1,6 @@
 import { isBrowserSupported } from "./isBrowserSupported"
 
-test("return not supported when IE is disabled", () => {
+test("return not supported when IE is disabled", (): void => {
   const isIE11Supported = isBrowserSupported(
     { ie: false },
     { name: "Internet Explorer", version: "11" },
@@ -27,7 +27,7 @@ test("return not supported when IE is disabled", () => {
   expect(isIE8Supported).toBeFalsy()
 })
 
-test("return not supported when Chrome is disabled", () => {
+test("return not supported when Chrome is disabled", (): void => {
   const isChromeSupported = isBrowserSupported(
     { chrome: false },
     { name: "Chrome", version: "49" },
@@ -36,7 +36,7 @@ test("return not supported when Chrome is disabled", () => {
   expect(isChromeSupported).toBe(false)
 })
 
-test("return Chrome is supported when IE is not supported", () => {
+test("return Chrome is supported when IE is not supported", (): void => {
   const isChromeSupported = isBrowserSupported(
     { ie: false },
     { name: "Chrome", version: "49" },
@@ -45,7 +45,7 @@ test("return Chrome is supported when IE is not supported", () => {
   expect(isChromeSupported).toBe(true)
 })
 
-test("return IE10 is not supported when IE11-only is supported", () => {
+test("return IE10 is not supported when IE11-only is supported", (): void => {
   const isIE11Supported = isBrowserSupported(
     { ie: 10 },
     { name: "Internet Explorer", version: "11" },
@@ -54,7 +54,7 @@ test("return IE10 is not supported when IE11-only is supported", () => {
   expect(isIE11Supported).toBeTruthy()
 })
 
-test("return IE and Chrome are not supported when both are disabled", () => {
+test("return IE and Chrome are not supported when both are disabled", (): void => {
   const isChromeSupported = isBrowserSupported(
     { ie: false, chrome: false },
     { name: "Chrome", version: "49" },
