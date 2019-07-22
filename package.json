@@ -1,6 +1,6 @@
 {
-  "name": "@digitalrelab/react-browser-support",
-  "description": "A simple React hook to render contents based on browser support. TypeScript ready.",
+  "name": "@digitalrelab/browser-support",
+  "description": "A simple function that determines whether the user's browser is supported or not. TypeScript ready.",
   "version": "1.0.0",
   "main": "src/index.ts",
   "author": "DigitalReLab, LLC.",
@@ -47,10 +47,6 @@
       ]
     ]
   },
-  "peerDependencies": {
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6"
-  },
   "devDependencies": {
     "@babel/preset-typescript": "^7.3.3",
     "@commitlint/cli": "^8.1.0",
@@ -58,10 +54,7 @@
     "@semantic-release/changelog": "^3.0.4",
     "@semantic-release/git": "^7.0.16",
     "@semantic-release/release-notes-generator": "^7.2.1",
-    "@testing-library/react": "^8.0.5",
     "@types/jest": "^24.0.15",
-    "@types/react": "^16.8.23",
-    "@types/react-dom": "^16.8.4",
     "@types/styled-components": "^4.1.18",
     "@typescript-eslint/eslint-plugin": "^1.12.0",
     "@typescript-eslint/parser": "^1.12.0",
@@ -70,7 +63,6 @@
     "eslint": "^6.0.1",
     "eslint-config-prettier": "^6.0.0",
     "eslint-plugin-prettier": "^3.1.0",
-    "eslint-plugin-react": "^7.14.2",
     "git-cz": "^3.2.1",
     "husky": "^3.0.1",
     "jest": "^24.8.0",
@@ -79,7 +71,6 @@
     "typescript": "^3.5.3"
   },
   "dependencies": {
-    "bowser": "^2.5.2",
-    "styled-components": "^4.3.2"
+    "bowser": "^2.5.2"
   }
 }

@@ -3,7 +3,7 @@ import Bowser from "bowser"
 import { TBrowsersRules } from "./types"
 import { isBrowserSupported } from "./isBrowserSupported"
 
-export function useBrowserSupport(browsersRules: TBrowsersRules): boolean {
+export function browserSupport(browsersRules: TBrowsersRules): boolean {
   const bowser = Bowser.getParser(window.navigator.userAgent)
   const currentBrowser = bowser.getBrowser()
 

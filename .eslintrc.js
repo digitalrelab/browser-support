@@ -7,7 +7,6 @@ module.exports = {
     project: "./tsconfig.json",
   },
   extends: [
-    "plugin:react/recommended",
     "plugin:@typescript-eslint/recommended",
     "prettier/@typescript-eslint",
     "plugin:prettier/recommended",
@@ -18,7 +17,5 @@ module.exports = {
       "error",
       { functions: false, variables: false },
     ],
-    "react/prop-types": false,
-    "react/display-name": false,
   },
 }
