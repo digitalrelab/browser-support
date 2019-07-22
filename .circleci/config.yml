@@ -24,4 +24,6 @@ jobs:
       - run:
           name: Test
           command: yarn test
-
+      - run:
+          name: Release
+          command: npx semantic-release
