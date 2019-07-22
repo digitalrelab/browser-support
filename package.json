@@ -7,7 +7,8 @@
   "license": "MIT",
   "scripts": {
     "commit": "git-cz",
-    "test": "jest"
+    "test": "jest",
+    "release": "./release.sh"
   },
   "config": {
     "commitizen": {
