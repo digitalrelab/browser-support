@@ -14,3 +14,5 @@ export function browserSupport(browsersRules: TBrowsersRules): boolean {
 
   return isCurrentBrowserSupported
 }
+
+export * from "./getSupportedBrowsers"
