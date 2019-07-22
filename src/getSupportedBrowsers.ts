@@ -8,11 +8,7 @@ export function getSupportedBrowsers(
   return browsersKeys.filter((browserKey: TBrowserKey): boolean => {
     const browserRule = browsersRules[browserKey]
 
-    if (typeof browserRule === "undefined") {
-      return true
-    }
-
-    if (browserRule === true) {
+    if (typeof browserRule === "undefined" || browserRule === true) {
       return true
     }
 
