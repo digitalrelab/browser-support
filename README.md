@@ -47,7 +47,7 @@ export const App: React.FC = () => {
 
 # In depth
 
-### browserSupport(browsersRules: TBrowsersRules): boolean
+## browserSupport(browsersRules: TBrowsersRules): boolean
 This method returns `true` when current browser is actually supported. `false` otherwise.
 
 ### What is `browsersRules`?
@@ -68,6 +68,20 @@ The above means that all IE versions are disabled, and Chrome requires version h
 - `safari`
 - `opera`
 - `edge`
+
+## Returning supported browsers
+
+From `v1.2.0`, you have the ability to retrieve supported browsers based on the user's UserAgent:
+
+```tsx
+const [isBrowserSupported, supportedBrowsers] = browserSupport(
+  { ie: false },
+  { shouldReturnSupportedBrowsers: true },
+)
+
+/* ["chrome", "firefox", "safari", "opera", "edge"] */
+console.log(supportedBrowsers)
+```
 
 # License
 
