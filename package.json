@@ -1,7 +1,7 @@
 {
   "name": "@digitalrelab/browser-support",
   "description": "A simple function that determines whether the user's browser is supported or not. TypeScript ready.",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "main": "src/index.ts",
   "author": "DigitalReLab, LLC.",
   "license": "MIT",
